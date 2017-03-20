@@ -52,8 +52,8 @@ websauna_config_includes: >
     resource://{{ package_name }}/conf/base.ini
     resource://websauna/conf/base.ini
 
-# Generated PostgreSQL database n ame.
-db_name: "{{ site_id }}_{{ site_mode }}"
+# Generated PostgreSQL database name.
+db_name: "{{ site_id }}_{{ package_name }}"
 
 # Generated PostgreSQL user. Must match UNIX user running the application.
 db_user: "{{ wsgi_user }}"
