@@ -63,6 +63,7 @@
     - letsencrypt_renewal_command_args: '--renew-hook "service nginx restart"'  # Ubuntu 14.04 nginx restart
     - nginx_ssl_certificate_path: "/etc/letsencrypt/live/{{ server_name }}/cert.pem"
     - nginx_ssl_certificate_path_key: "/etc/letsencrypt/live/{{ server_name }}/privkey.pem"
+    - nginx_ssl_certificate_fullchain_path: "/etc/letsencrypt/live/{{ server_name }}/fullchain.pem"
 
   pre_tasks:
 
